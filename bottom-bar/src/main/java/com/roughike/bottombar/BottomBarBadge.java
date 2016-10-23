@@ -30,7 +30,7 @@ import android.widget.TextView;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-class BottomBarBadge extends TextView {
+public class BottomBarBadge extends TextView {
     @VisibleForTesting
     static final String STATE_COUNT = "STATE_BADGE_COUNT_FOR_TAB_";
 
@@ -107,7 +107,7 @@ class BottomBarBadge extends TextView {
         wrapTabAndBadgeInSameContainer(tab);
     }
 
-    void setColoredCircleBackground(int circleColor) {
+    public void setColoredCircleBackground(int circleColor) {
         int innerPadding = MiscUtils.dpToPixel(getContext(), 1);
         ShapeDrawable backgroundCircle = BadgeCircle.make(innerPadding * 3, circleColor);
         setPadding(innerPadding, innerPadding, innerPadding, innerPadding);

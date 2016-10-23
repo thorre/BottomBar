@@ -244,6 +244,11 @@ public class BottomBarTab extends LinearLayout {
         this.barColorWhenSelected = barColorWhenSelected;
     }
 
+    public BottomBarBadge getBadge() {
+        return badge;
+
+    }
+
     int getBadgeBackgroundColor() {
         return badgeBackgroundColor;
     }
